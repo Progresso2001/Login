@@ -18,6 +18,7 @@ body{
     border-radius: 10px;
     width: 400px;
     padding: 40px;
+   
 }
 .principal h1{
     margin-bottom: 30px;
@@ -67,11 +68,15 @@ body{
     font-size: 16px;
     color:#03e9f4;
     float: right;
-    transform: translateY(-10px);
-    transition: all ease-out .1  s;
+    text-decoration: none;
+    font-weight: bold;
+
+    
+   
 }
 .lembrar p a:hover{
     color: white;
+    text-decoration: underline;
 }
 .botao{
     position: relative;
