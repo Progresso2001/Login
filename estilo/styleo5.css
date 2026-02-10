@@ -1,0 +1,173 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #586173;
+}
+.principal{
+    background: rgba(0,0,0,0.5);
+    border-radius: 10px;
+    width: 400px;
+    padding: 40px;
+}
+.principal h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+.principal span{
+    color: #03e9f4;
+}
+.principal .inserir-dados{
+    position: relative;
+}
+.principal .inserir-dados input{
+    width: 100%;
+    padding: 10px 0;
+    outline: none;
+    border: 0;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+.principal .inserir-dados input::placeholder{
+    color:transparent;
+}
+.principal .inserir-dados label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    color: #03e9f4;
+    font-size: 30px;
+    pointer-events: none;
+    transition:  .5s;
+}
+
+/* Para animar os icones dentro da label ou label */
+.principal .inserir-dados input:focus~label,
+.principal .inserir-dados input:valid~label{
+    top:-20px;
+    left: 0;
+    font-size: 12px;
+}
+.lembrar p a{
+    font-size: 16px;
+    color:#03e9f4;
+    float: right;
+    transform: translateY(-10px);
+    transition: all ease-out .1  s;
+}
+.lembrar p a:hover{
+    color: white;
+}
+.botao{
+    position: relative;
+    display: inline-block;
+    padding: 12px 12px;
+    color:#03e9f4;
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 700;
+    margin-top: 20px;
+    transform: .5s;
+    overflow: hidden; /*Para ajustar os movimeto do botao entrar*/
+}
+.botao:hover{
+    background: #03e9f4;;
+    border-radius: 5px;
+    color: #172031;
+}
+.botao span{
+    position: absolute;
+    display: block;
+}
+
+.botao span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: botao1 1s linear infinite;
+}
+
+/* usando keyframes para animação de movimento */
+
+@keyframes botao1{ 
+    0%{
+        left: -100%;
+    }
+    50%,
+    100%{
+        left: 100%;
+    }
+}
+.botao span:nth-child(2){ 
+    top: -100%;
+    right: 0;
+    width:4px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: botao2 1s linear infinite;
+    animation-delay: .10s;
+}
+@keyframes botao2{ 
+    0%{
+        top: -100%;
+    }
+    50%,
+    100%{
+        top: 100%;
+    }
+}
+.botao span:nth-child(3){  
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: botao3 1s linear infinite;
+    animation-delay: .45s;
+}
+@keyframes botao3{ 
+    0%{
+        right: -100%;
+    }
+    50%,
+    100%{
+        right: 100%;
+    }
+}
+.botao span:nth-child(4){  
+    left: -100%;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(26deg, transparent, #03e9f4);
+    animation: botao4 1s linear infinite;
+    animation-delay: .70s;
+}
+@keyframes botao4{ 
+    0%{
+        bottom: -100%;
+    }
+    50%,
+    100%{
+        bottom: 100%;
+    }
+}
