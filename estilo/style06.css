@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+header{
+    display: flex;
+    justify-content: space-between; /* Logo esquerda, nav direita */
+    align-items: center;
+    gap: 10px;
+    padding: 1rem 2rem; /* Espaçamento interno opcional */
+    background-color:#063653;/*alterar o background-color */
+    height: 70px;
+}
+header h1{
+    color: white;
+    margin: 0;
+    flex-shrink: 0; /* Impede encolhimento do logo */
+   
+}
+header span{
+    color: rgb(50, 168, 168);
+}
+.menus-principal ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 1rem;
+    flex-shrink: 0;
+    list-style: none;
+    position: static;
+    top: 0;
+}
+.menus-principal  a{
+    text-decoration: none;
+    color: #333;
+    padding: 0.5rem 1rem;
+    border: 1px solid #c9c4c4;
+    outline: none;
+    background: white;
+    border-radius: 20px;
+    font-weight: 600;
+    transition: all ease-in-out .3s;
+    font-family: sans-serif;
+}
+.menus-principal  a:hover{
+    background-color:#c2ccd2;   
+}
+.formulario-principal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url(../fotos/pexels-elijahsad-3473569.jpg);
+    background-size: cover;
+    
+}
+.formulario-principal .formulario{
+    background:white;
+    border-radius: 40px 5px;
+    width: 400px;
+    padding: 40px;
+    border: none;
+
+}
+.formulario-principal h2{
+    color: black;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-family: sans-serif;
+
+}
+.formulario-principal  .inserir-dados{
+    position: relative;
+}
+.inserir-dados label{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.inserir-dados input{
+    width: 100%;
+    padding: 10px 10px;
+    border-radius: 25px;
+    outline: none;
+    font-size: 16px;
+    color: rgb(152, 145, 145);
+    font-weight: 600;
+    border: 1px solid #767373;
+    transform: translateY(12px);
+    transition: all ease .3s;
+}
+.inserir-dados input::placeholder{
+    color: #333;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+.botao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+.botao input{
+ 
+    font-family: "Poppins";
+    margin-top: 20px;
+    text-transform: uppercase;
+    border: 1px solid #333;
+    border-radius: 80px;
+    padding: 10px 10px;
+    outline: none;
+    background: #0e0a0a;
+    font-weight: bolder;
+    letter-spacing: 4px;
+    color: white;
+}
+.botao input:hover{
+    background-color: #5a5656;
+}
+
+
+
+
